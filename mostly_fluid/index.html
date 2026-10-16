@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrón Mostly Fluid - Escuela Virtual</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: #f3f4f6;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .c1, .c2, .c3, .c4, .c5 {
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 6px;
+        }
+
+        .c1 { background-color: #e63946; }
+        .c2 { background-color: #3b82f6; }
+        .c3 { background-color: #10b981; }
+        .c4 { background-color: #f59e0b; }
+        .c5 { background-color: #8b5cf6; }
+
+        /* Instrucción 1 a 4: Estilo para móviles */
+        .c1, .c2, .c3, .c4, .c5 {
+            width: 100%;
+        }
+
+        /* Instrucción 5 a 10: Estilo para tabletas (min-width: 600px) */
+        @media (min-width: 600px) {
+            .c2, .c3, .c4, .c5 {
+                width: 50%;
+            }
+        }
+
+        /* Instrucción 11 a 30: Estilo para desktop (min-width: 800px) */
+        @media (min-width: 800px) {
+            .c1 {
+                width: 100%;
+            }
+
+            .c2 {
+                width: 100%;
+            }
+
+            .c3, .c4, .c5 {
+                width: 33.33%;
+            }
+
+            .container {
+                width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Escuela Virtual Infantil</h1>
+
+    <div class="container">
+        <div class="c1">Caja 1 - Banner / Encabezado</div>
+        <div class="c2">Caja 2 - Contenido Principal</div>
+        <div class="c3">Caja 3 - Curso A</div>
+        <div class="c4">Caja 4 - Curso B</div>
+        <div class="c5">Caja 5 - Curso C</div>
+    </div>
+
+</body>
+</html>

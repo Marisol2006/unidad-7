@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            font-size: 18px;
+            color: blue;
+        }
+
+        /* Instrucción 2: Ocultar #resumen */
+        #resumen {
+            display: none;
+            padding: 15px;
+            background-color: #fee2e2;
+            border: 1px solid #fca5a5;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+
+        /* Instrucciones 3 a 9: Media query para más de 600px */
+        @media (min-width: 600px) {
+            #resumen {
+                display: block;
+            }
+
+            body {
+                font-size: 16px;
+                color: red;
+            }
+        }
+
+        /* Instrucción 10: Media query para más de 900px */
+        @media (min-width: 900px) {
+            body {
+                font-size: 14px;
+                color: black;
+            }
+
+            #resumen {
+                background-color: #e0f2fe;
+                border-color: #7dd3fc;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Demostración de Media Queries</h1>
+    <p>Redimensiona la ventana del navegador para observar cómo cambian el color de la letra y la visibilidad de la sección de resumen.</p>
+
+    <div id="resumen">
+        <h2>Sección Resumen</h2>
+        <p>Este resumen es visible cuando la pantalla mide más de 600px de ancho.</p>
+    </div>
+
+</body>
+</html>

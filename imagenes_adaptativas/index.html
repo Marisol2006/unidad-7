@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes Adaptativas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        article {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #2b7a78;
+        }
+
+        img {
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        /* Instrucción 2: Estilo adaptativa-porcentaje-1 con ancho de 70% */
+        .adaptativa-porcentaje-1 {
+            width: 70%;
+        }
+
+        /* Instrucción 4: Estilo adaptativa-porcentaje-2 con ancho de 50% */
+        .adaptativa-porcentaje-2 {
+            width: 50%;
+        }
+
+        /* Instrucción 6: Estilo adaptativa-porcentaje-3 con ancho de 20% */
+        .adaptativa-porcentaje-3 {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Uso de Imágenes Adaptativas con Porcentajes</h1>
+
+    <!-- Artículo 1: Instrucciones 1 y 2 -->
+    <article>
+        <h2>Primer Artículo (70%)</h2>
+        <p>Imagen adaptativa configurada al 70% de su contenedor.</p>
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%232b7a78' rx='10'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='36' fill='white'%3EDiente Feliz 1 (70%25)%3C/text%3E%3C/svg%3E" alt="Diente feliz 1" class="adaptativa-porcentaje-1">
+    </article>
+
+    <!-- Artículo 2: Instrucciones 3 y 4 -->
+    <article>
+        <h2>Segundo Artículo (50%)</h2>
+        <p>Imagen adaptativa configurada al 50% de su contenedor.</p>
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%233aafa9' rx='10'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='36' fill='white'%3EDiente Feliz 2 (50%25)%3C/text%3E%3C/svg%3E" alt="Diente feliz 2" class="adaptativa-porcentaje-2">
+    </article>
+
+    <!-- Artículo 3: Instrucciones 5 y 6 -->
+    <article>
+        <h2>Tercer Artículo (20%)</h2>
+        <p>Imagen adaptativa configurada al 20% de su contenedor.</p>
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%23172a3a' rx='10'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='36' fill='white'%3EDiente Feliz 3 (20%25)%3C/text%3E%3C/svg%3E" alt="Diente feliz 3" class="adaptativa-porcentaje-3">
+    </article>
+
+</body>
+</html>
